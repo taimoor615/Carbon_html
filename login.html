@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.png">
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.ico">
+
+    <!-- Bootstrap Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- main content -->
+    <main>
+
+        <section class="login">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="login-screen">
+                            <div class="logo">
+                                <img src="images/login.svg" class="img-fluid">
+                            </div>
+                            <div class="description">
+                                <p>Food Ordering Management System</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="login-form">
+                            <form class="validation" action="dashboard.html">
+                                <div class="needs-validation">
+                                    <div class="heading_txt_login">
+                                        <h1>Login</h1>
+                                    </div>
+                                    <div class="form-outline">
+                                        <label>Email</label>
+                                        <div class="icon">
+                                            <img src="images/mail.svg" class="img-fluid">
+                                        </div>
+
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="Enter your company email" required />
+                                    </div>
+                                    <div class="form-outline">
+                                        <label>Password</label>
+                                        <div class="icon">
+                                            <img src="images/password.svg" class="img-fluid">
+                                        </div>
+                                        <input type="text" class="form-control" id="validationCustom04"
+                                            placeholder="Password" required />
+                                    </div>
+                                    <div class="user-action">
+                                        <div class="remember-me">
+                                            <input type="checkbox" id="remember" name="remember" checked="false">
+                                            <label for="remember" class="form-label">Remember Me</label>
+                                        </div>
+                                        <div class="forget-pass">
+                                            <p><a href="forget-password.html">Forgot password?</a></p>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-primary" type="submit">Login</button>
+                                    <div class="create-acc">
+                                        <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

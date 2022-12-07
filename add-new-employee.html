@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Add New Employee </title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.png">
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.ico">
+
+    <!-- Bootstrap Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="siderbar-header">
+        <section class="header-wrap">
+            <div class="toggle-wrap">
+                <div class="brand-logo">
+                    <a href="dashboard.html"><img src="images/logo.svg" alt="brand logo"></a>
+                </div>
+                <div class="toggle-btn">
+                    <a href="javascript:void(0);" id="sidebar-toggle-button"><img src="images/toggle-btn.svg"
+                            alt="sidebar toggle button"></a>
+                </div>
+            </div>
+            <div class="logo-mobile">
+                <a href="dashboard.html"><img src="images/logo.svg" alt="brand logo"></a>
+            </div>
+            <div class="profile-wrap">
+                <div class="notification-wrap profile-inner-wrap">
+                    <a href="javascript:void(0)" class="profile-dropdown-btn notification-dropdown active"><img src="images/bell-icon.svg"
+                            alt="notification icon"></a>
+                            <div class="profile-dropdown">
+                                <section class="dropdown-notifications">
+                                    <div class="dropdown-title">
+                                        <span class=""> Notifications</span>
+                                        <a href="" class="notify-link-cp">Mark as read</a>
+                                    </div>
+                                    <div class="notifications">
+                                        <ul>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            Your password has been successfully changed.
+                                                        </span>
+                                                        <p class="notify-time notify-dd">Jul 15, 2022 at 09:15 AM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            You have a new login request from Inam ibrahim
+                                                        </span>
+                                                        <p class="notify-time notify-dd">June 23, 2022 at 11:17 AM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            You have a new login request from Tayyab Tahir.
+                                                        </span>
+                                                        <p class="notify-time notify-dd">June 08, 2022 at 02:35 PM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <a href="notification.html" class="notify-link-cp">View all Notifications</a>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                </div>
+                <div class="username-wrap profile-inner-wrap">
+                    <a href="javascript:void(0);" class="profile-dropdown-btn" id="profile-dropdown">qh</a>
+                    <div class="profile-dropdown ">
+                        <ul>
+                            <li><a href="settings.html">Settings</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- dashboard -->
+        <section class="dashboard-outer-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="dashboard-sidebar-wrap">
+                        <ul>
+                            <li><a href="dashboard.html" ><img src="images/user-icon.svg">Dashboard</a>
+                            </li>
+                            <li class="active"><a href="employees.html" ><img src="images/employee-icon.svg">Employees</a></li>
+                            <li><a href="payroll.html"><img src="images/payroll-icon.svg">Payroll</a></li>
+                            <li><a href="all Reminders.html"><img src="images/remainder-icon.svg">Reminders</a></li>
+                            <li><a href="order-food.html"><img src="images/FMS-icon.svg">FMS</a></li>
+                            <li><a href="medical-dashboard.html"><img src="images/medcial-icon.svg">Medical</a></li>
+                            <li><a href="accounts.html" ><img src="images/accounts-icon.svg">Accounts</a></li>
+                            <li><a href=""><img src="images/taxation-icon.svg">Taxation</a></li>
+                            <li class="children-items ">
+                                <a href="settings.html"><img src="images/seeting-icon.svg">Settings</a>
+                                <span class="sidebar-dropdown"><img src="images/Vector-arrow.svg" ></span>
+
+                                <ul class="sub-menu">
+                                    <li> <a href="user-info.html"><img src="images/users.svg">Users</a></li>
+                                    <li><a href=""><img src="images/roles-icon.svg">Roles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-content-wrap">
+                        <div class="main-content-inner">
+                            <div class="user-outerwrap">
+                                <h1>Add New Employee</h1>
+                                
+                            </div>
+                            <div class="dashboard-table-wrap">
+                                <div class="employee-main">
+                                    <form action="">
+                                        <div class="input-group">
+                                            <div class="custom-field">
+                                                <input type="text" id="full_name" name="full_name" class="form-group" />
+                                                <label>Full Name</label>
+                                            </div>
+                                            <div class="custom-field">
+                                                <input type="text" name="first_name" class="form-group">
+                                                <label for="">CNIC number</label>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="custom-field">
+                                                <input type="email" name="personal_email" class="form-group">
+                                                <label for="">Personal Email</label>
+                                            </div>
+                                            <div class="custom-field">
+                                                <input type="email" name="company_name" class="form-group">
+                                                <label for="">Company Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="custom-field">
+                                                <input type="text" name="designation" class="form-group">
+                                                <label for="">Designation</label>
+                                            </div>
+                                            <div class="custom-field">
+
+
+                                                <div class="input-group">
+                                                    <div class="custom-field">
+                                                        <input type="tel" name="phone_number" class="form-group">
+                                                        <label for="">Phone Number</label>
+                                                    </div>
+                                                    <div class="custom-field">
+                                                        <input type="tel" name="emergency-contact" class="form-group">
+                                                        <label for="">Emergency Contact</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="input-group">
+                                            <div class="group-parent">
+                                                <div class="input-group">
+                                                    <div class="custom-field">
+                                                        <label for="">Lunch Shift</label>
+                                                        <select class="lunch-shift">
+                                                            <option value="1">Shift 1 (1:15-1:30)</option>
+                                                            <option value="2">Shift 2 (1:45-2:00)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="custom-field">
+                                                        <input type="number" name="tax_deduction" class="form-group">
+                                                        <label for="">Gross Salary</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="group-parent">
+                                                <div class="input-group">
+                                                    <div class="custom-field">
+                                                        <input type="date" name="joining_date" class="form-group">
+                                                        <label for="">Joining Date</label>
+                                                    </div>
+                                                    <div class="custom-field">
+                                                        <input type="text" name="ac_number" class="form-group">
+                                                        <label for="">Account Number</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+            
+                                        <div class="input-group">
+                                            <div class="custom-field">
+                                                <label>CNIC Front Image</label>
+                                                <input type="file" id="cnic_front_img" class="form-group">
+                                                <label for="cnic_front_img" class="file-choose_lbl">Choose File</label>
+                                            </div>
+                                            <div class="custom-field">
+                                                <label>CNIC Back Image</label>
+                                                <input type="file" id="cnic_back_img" class="form-group">
+                                                <label for="cnic_back_img" class="file-choose_lbl">Choose File</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-submit-btns">
+                                            <button name="cancel_btn" class="form-group cancel_emp_btn">Cancel</button>
+                                            <button name="save_btn" class="form-group save_emp_btn">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Data Tables -->
+    <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>

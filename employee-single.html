@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Hussain Tahir</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.png">
+    <link rel="shortcut icon" type="images/ico" href="images/favicon.ico">
+
+    <!-- Bootstrap Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+    <!-- FontAwesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Css -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="siderbar-header">
+        <section class="header-wrap">
+            <div class="toggle-wrap">
+                <div class="brand-logo">
+                    <a href="dashboard.html"><img src="images/logo.svg" alt="brand logo"></a>
+                </div>
+                <div class="toggle-btn">
+                    <a href="javascript:void(0);" id="sidebar-toggle-button"><img src="images/toggle-btn.svg"
+                            alt="sidebar toggle button"></a>
+                </div>
+            </div>
+            <div class="logo-mobile">
+                <a href="dashboard.html"><img src="images/logo.svg" alt="brand logo"></a>
+            </div>
+            <div class="profile-wrap">
+                <div class="notification-wrap profile-inner-wrap">
+                    <a href="javascript:void(0)" class="profile-dropdown-btn notification-dropdown active"><img src="images/bell-icon.svg"
+                            alt="notification icon"></a>
+                            <div class="profile-dropdown">
+                                <section class="dropdown-notifications">
+                                    <div class="dropdown-title">
+                                        <span class=""> Notifications</span>
+                                        <a href="" class="notify-link-cp">Mark as read</a>
+                                    </div>
+                                    <div class="notifications">
+                                        <ul>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            Your password has been successfully changed.
+                                                        </span>
+                                                        <p class="notify-time notify-dd">Jul 15, 2022 at 09:15 AM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            You have a new login request from Inam ibrahim
+                                                        </span>
+                                                        <p class="notify-time notify-dd">June 23, 2022 at 11:17 AM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="notification.html">
+                                                    <div class="notify ">
+                                                        <div>
+                                                            <img src="images/Ellipse 37.svg">
+                                                        </div>
+                                                     <div class="noti-cp">
+                                                        <span class="notify-link-employee">
+                                                            You have a new login request from Tayyab Tahir.
+                                                        </span>
+                                                        <p class="notify-time notify-dd">June 08, 2022 at 02:35 PM</p>
+                                                     </div>
+                                                        
+                                                        
+                                                    </div>
+                                                </a>
+
+                                            </li>
+                                            <a href="notification.html" class="notify-link-cp">View all Notifications</a>
+                                        </ul>
+                                    </div>
+                                </section>
+                            </div>
+                </div>
+                <div class="username-wrap profile-inner-wrap">
+                    <a href="javascript:void(0);" class="profile-dropdown-btn" id="profile-dropdown">qh</a>
+                    <div class="profile-dropdown ">
+                        <ul>
+                            <li><a href="settings.html">Settings</a></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- main content -->
+    <main>
+
+        <!-- dashboard -->
+        <section class="dashboard-outer-wrap">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="dashboard-sidebar-wrap">
+                        <ul>
+                            <li><a href="dashboard.html" ><img src="images/user-icon.svg">Dashboard</a>
+                            </li>
+                            <li class="active"><a href="employees.html" ><img src="images/employee-icon.svg">Employees</a></li>
+                            <li><a href="payroll.html"><img src="images/payroll-icon.svg">Payroll</a></li>
+                            <li><a href="all Reminders.html"><img src="images/remainder-icon.svg">Reminders</a></li>
+                            <li><a href="order-food.html"><img src="images/FMS-icon.svg">FMS</a></li>
+                            <li><a href="medical-dashboard.html"><img src="images/medcial-icon.svg">Medical</a></li>
+                            <li><a href="accounts.html" ><img src="images/accounts-icon.svg">Accounts</a></li>
+                            <li><a href=""><img src="images/taxation-icon.svg">Taxation</a></li>
+                            <li class="children-items ">
+                                <a href="settings.html"><img src="images/seeting-icon.svg">Settings</a>
+                                <span class="sidebar-dropdown"><img src="images/Vector-arrow.svg" ></span>
+
+                                <ul class="sub-menu">
+                                    <li> <a href="user-info.html"><img src="images/users.svg">Users</a></li>
+                                    <li><a href=""><img src="images/roles-icon.svg">Roles</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dashboard-content-wrap">
+                        <div class="main-content-inner">
+
+                            <div class="head-wrap">
+
+                                <div class="user-outerwrap head-title">
+                                    <div class="name-tag">
+                                        <span class="circle">HT</span>
+                                    </div>
+                                    <div class="employee-details">
+                                        <h1>Hussain Tahir <span class="tag tag-active">Active</span><span
+                                                class="tag tag-deactive">Deactive</span></h1>
+                                        <p>hussaintahir@gmail.com</p>
+                                    </div>
+
+                                </div>
+                                <div class="single-employee-main">
+                                    <div class="revise-salary-btn ">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Revise Salary</a>
+                                    </div>
+                                    <div class="add-btn edit-btn">
+                                        <a href="edit-emplyee.html">Edit</a>
+                                    </div>
+                                </div>
+                               
+
+                            </div>
+
+                            <div class="personal-details">
+
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/info-mail.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>Personal Email</h1>
+                                            <p>hussaintahir@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/cnic.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>CNIC NUMBER</h1>
+                                            <p>35200-15326548</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/call.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>PHONE NUMBER</h1>
+                                            <p>+92123456789</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/briefcase.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>Designation</h1>
+                                            <p>Developer</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/wallet.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>GROSS SALARY</h1>
+                                            <p>250000</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/dollar.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>TAX DEDUCTION</h1>
+                                            <p>250</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/wallet.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>NET SALARY</h1>
+                                            <p>24750</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/date.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>JOINING DATE</h1>
+                                            <p>10-13-2022</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="details-wrap">
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/increment.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>RECENT INCREMENT</h1>
+                                            <p>22</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/date.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>INCREMENT DATE</h1>
+                                            <p>10-13-2022</p>
+                                        </div>
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail-icon">
+                                            <img src="images/date.svg" class="img-fluid">
+                                        </div>
+                                        <div class="info">
+                                            <h1>TAX YEAR</h1>
+                                            <p>2022-2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="personal-details sec-pad">
+
+                                <div class="cnic-box">
+
+                                    <div class="info side-img">
+                                        <h1>cnic front image</h1>
+                                        <form action="/action_page.php">
+                                            <label for="front-img-cnic">No file Choosen</label>
+                                            <input type="file" id="front-img-cnic" name="img" accept="image/*">
+                                        </form>
+                                    </div>
+
+                                    <div class="info side-img">
+                                        <h1>cnic back image</h1>
+                                        <form action="/action_page.php">
+                                            <label for="back-img-cnic">No file Choosen</label>
+                                            <input type="file" id="back-img-cnic" name="img" accept="image/*">
+                                        </form>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+                            <div class="increment-history">
+                                <h1>Increment History</h1>
+                            </div>
+
+                            <div class="personal-details">
+
+                                <div class="increment-main-wrap">
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="increment-inner-wrap">
+                                        <div class="history-detail">
+                                            <p>15th Jun, 2022</p>
+                                            <span class="currency">PKR</span>
+                                        </div>
+                                        <div class="increment-record">
+                                            <h1>150,000 <img src="images/arrow.svg" class="img-fluid"> 160,000</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal  -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content modal-revise-salary-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Revise Salary</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-title modal-revise-salary-body">
+                        ENTER REVISED SALARY AMOUNT
+                        <input type="text" class="form-control input-text" id="text-input" value="28000">
+                    </div>
+                    <div class="modal-footer modal-revise-salary-footer">
+                        <button type="button" class="btn btn-outline-primary revise-salary-modal-cancel-btn"
+                            data-bs-dismiss="modal">Cancel</button>
+                        <button type="button"
+                            class="btn btn-outline-primary  revise-salary-modal-confirm-btn">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+
+    <!-- Data Tables -->
+    <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
