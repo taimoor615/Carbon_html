@@ -102,29 +102,73 @@ $(document).click(function(){
 
 /* Fixed Table column */
 $(document).ready(function() {
+    var table = $('#dashboard-datatable').DataTable();
+} );
+
+if($('#dashboard-datatable.employee-table-dashboard-cp')[0]){
     var table = $('#dashboard-datatable.employee-table-dashboard-cp').DataTable( {
-        // scrollY:        "300px",
-        // scrollX:        true,
-        // scrollCollapse: true,
         paging:         false,
         fixedColumns:   {
             left: 0,
             right: 1
         }
     } );
-} );
+}
+else{
+        var table = $('#dashboard-datatable').DataTable();
+}
+
+// $(document).ready(function() {
+//     var table = $('#dashboard-datatable.employee-table-dashboard-cp').DataTable( {
+//         // scrollY:        "300px",
+//         // scrollX:        true,
+//         // scrollCollapse: true,
+//         paging:         false,
+//         fixedColumns:   {
+//             left: 0,
+//             right: 1
+//         }
+//     } );
+// } );
 
 
 $(document).ready(function() {
     $('.js-example-disabled-results').select2();
+
 });
 
-$(document).on("click", 'input.input-switch', function () {
-    if ($(this).is(":checked")) {
-        $('.label-switch').addClass('active_lbl');
-        $('.info-text').addClass('active_txt');
-    }else{
+// $(document).on("click", 'input.input-switch', function () {
+//     if ($(this).is(":checked")) {
+//         $('.label-switch').addClass('active_lbl');
+//         $('.info-text').addClass('active_txt');
+//     }else{
+//         $('.label-switch').removeClass('active_lbl');
+//         $('.info-text').removeClass('active_txt');
+//     }
+// });
+
+
+$(document).ready(function(){
+    var radioChecked = $('input.input-switch').prop('checked');
+    if(radioChecked == false){
         $('.label-switch').removeClass('active_lbl');
         $('.info-text').removeClass('active_txt');
     }
+    else{
+        $('.label-switch').addClass('active_lbl');
+        $('.info-text').addClass('active_txt');
+    }
 });
+$(document).ready(function(){
+    $('input.input-switch').change(function(){
+        var radioChecked = $('input.input-switch').prop('checked');
+        if(radioChecked == false){
+            $('.label-switch').removeClass('active_lbl');
+            $('.info-text').removeClass('active_txt');
+        }
+        else{
+            $('.label-switch').addClass('active_lbl');
+            $('.info-text').addClass('active_txt');
+        }
+    });
+})

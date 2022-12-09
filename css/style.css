@@ -459,7 +459,9 @@ display: flex;
   margin-bottom: 30px;
   border-bottom: 0px transparent;
 }
-
+.payroll-modal-header{
+  margin-bottom:0px;
+}
 .modal-footer {
   border-top: 0px transparent;
   margin-right: 30px;
@@ -559,7 +561,7 @@ display: flex;
 }
 
 .modal-revise-salary-content {
-  padding: 30px 30px 30px 30px;
+  padding: 20px 20px 20px 20px;
   border: 1px solid var(--border-dark);
   border-radius: 8px;
 }
@@ -615,12 +617,17 @@ display: flex;
 .preview-modal-img {
   max-width: 100%;
 }
-
+.modal-revise-preview-body{
+  max-width: 100%;
+}
 .edit-btn-main {
   display: flex;
   align-items: center;
 }
-
+.pdf-payroll{
+  WIDTH: 100%;
+  MAX-WIDTH: 70%; 
+}
 .form-submit-btns button.cancel_emp_btn {
   margin: 0 24px 0 0;
   color: var(--primary-color);
@@ -1282,6 +1289,7 @@ box-shadow: none;
   border-radius: 50%;
   background-color: var(--bg-hover-color);
   position: absolute;
+  top: 13px;
 }
 
 .email-img {
@@ -1824,6 +1832,9 @@ ul .sub-menu {
 .employee-main .input-group {
   flex-wrap: unset;
   grid-column-gap: 10px;
+}
+.custom-input-group .custom-field{
+  margin-bottom:5px
 }
 
 .custom-field,
@@ -3345,6 +3356,16 @@ span.currency {
     height: 58px;
   }
 }
+@media screen and (max-width:1232px) {
+  .food-first-column {
+    grid-template-columns: 1fr 1fr;
+  }
+  .food-types{
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+}
 @media screen and (max-width:1200px) {
   .stats-wrap{
     display: grid;
@@ -3356,13 +3377,20 @@ span.currency {
     width:unset
   }
 }
-@media screen and (max-width:957px) {
+@media screen and (max-width:996px) {
   .payroll-header{
     display: unset;
   }
+  .user-outerwrap.payroll-main {
+    margin-bottom: 10px;
+
+  }
+  .payroll-header .search-btn{
+    margin-bottom: 30px;
+  }
   
 }
-@media screen and (max-width:878px) {
+@media screen and (max-width:982px) {
   .payroll-header .search-btn{
     display: unset;
   }
@@ -3382,6 +3410,17 @@ span.currency {
     margin-bottom: 30px;
 }
 }
+@media screen and (max-width:858px) {
+  .head-wrap{
+    display: unset;
+  }
+  .user-outerwrap.head-title h1{
+    margin-bottom: 8px;
+  }
+  .search-btn{
+    margin-bottom: 28px;
+  }
+}
 @media screen and (max-width:818px) {
   .head-wrap.employee-db{
     display: unset;
@@ -3390,7 +3429,7 @@ span.currency {
     margin-bottom: 8px;
   }
   .search-btn{
-    margin-bottom: 12px;
+    margin-bottom: 28px;
   }
 }
 @media all and (max-width:768px) {
@@ -3479,18 +3518,18 @@ span.currency {
 @media screen and (max-width:590px) {
   .add-btn {
     margin-top: 26px;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
   }
-  .add-btn a{
-    margin-left: unset;
-  }
+ 
   .head-wrap {
 display: block;
   }
   .search-btn {
     display: block;
   }
- 
+  .add-btn a{
+    margin-left: unset;
+  }
 }
 @media all and (max-width:575px) {
   .modal-content{
@@ -3547,14 +3586,14 @@ display: block;
     flex-direction: column;
   }
 
-  .dashboard-search-wrap {
+  /* .dashboard-search-wrap {
     margin-top: 20px;
-  }
+  } */
 
 }
-@media screen and (max-width:471px) {
+@media screen and (max-width:474px) {
   .modal-footer{
-    display: inline-block;
+    /* display: inline-block; */
     MARGIN-RIGHT: UNSET;
     margin-left: 15px;
   }
@@ -3574,16 +3613,25 @@ display: block;
   .modal-footer{
     margin-left: unset;
   }  
-  @media all and (max-width:416px) {
+}
+@media all and (max-width:416px) {
     .btn-outline-primary{
       padding: 10px 10px;
     }
     .btn-model{
       padding: 10px 10px;
     }
+  .modal-footer{
+    margin-right: 40px;
+  }
+  }
   
+@media all and (max-width:366px) {
+  .modal-footer{
+    margin-right: 20px;
+
   }
-  }
+}
 @media all and (max-width:359px) {
   .notification-wrap .profile-dropdown {
     right: -53px;
@@ -3600,6 +3648,11 @@ display: block;
     font-size: 15px;
   }
 }
+@media all and (max-width:342px) {
+  .modal-footer{
+    margin-right:unset;
+  }
+}
 @media all and (max-width:332px) {
   
   .dropdown-notifications::after {
@@ -3613,6 +3666,7 @@ display: block;
     min-width: 301px;
   }
 }
+
 @media all and (max-width: 320px) {
   .page-link {
     padding: 2px 10.2px;
