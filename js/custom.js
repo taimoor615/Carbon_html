@@ -60,9 +60,9 @@ jQuery(".profile-wrap a.profile-dropdown-btn").click(function (){
 
 // Data Tables initialization
 
-$(document).ready( function () {
-    $('#dashboard-datatable').DataTable();
-});
+// $(document).ready( function () {
+//     $('#dashboard-datatable').DataTable();
+// });
 
 
 
@@ -100,17 +100,31 @@ $(document).click(function(){
 });
 
 
+/* Fixed Table column */
+$(document).ready(function() {
+    var table = $('#dashboard-datatable.employee-table-dashboard-cp').DataTable( {
+        // scrollY:        "300px",
+        // scrollX:        true,
+        // scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            left: 0,
+            right: 1
+        }
+    } );
+} );
 
-// // increment and drecrement buttons 
-// function increment() {
-//     document.getElementById('demoInput').stepUp();
-//  }
-//  function decrement() {
-//     document.getElementById('demoInput').stepDown();
-//  }
 
-// $(document).ready(function() {
-//     $('.js-example-disabled-results').select2();
-// });
-var $disabledResults = $(".js-example-disabled-results");
-$disabledResults.select2();
+$(document).ready(function() {
+    $('.js-example-disabled-results').select2();
+});
+
+$(document).on("click", 'input.input-switch', function () {
+    if ($(this).is(":checked")) {
+        $('.label-switch').addClass('active_lbl');
+        $('.info-text').addClass('active_txt');
+    }else{
+        $('.label-switch').removeClass('active_lbl');
+        $('.info-text').removeClass('active_txt');
+    }
+});
